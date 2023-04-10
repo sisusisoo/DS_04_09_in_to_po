@@ -236,7 +236,7 @@ element* in_to_po(element exp[])
         }
     }
 
-    while (!is_empty(&s)) {//스택에 남아있는값 모두 더하기 
+    while (!is_empty(&s)) {//스택에 남아있는값 모두 더하기 (연산자에서 push할때 남아있는거 )
         op = peek(&s);//
         pop(&s);
         postfix_arr[idx++] = op;
